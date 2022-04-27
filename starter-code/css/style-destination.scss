@@ -1,0 +1,99 @@
+// colors //
+$black: #0b0d17;
+$grey: #d0d6f9;
+$white: #ffffff;
+
+
+//typography//
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap");
+
+html {
+  font-family: "Bellefair", serif;
+  margin: 0;
+  padding: 0;
+
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $white;
+
+    main {
+      width: 1440px;
+      height: 900px;
+      background: center / contain no-repeat url(/starter-code/assets/home/background-home-desktop.jpg);
+
+      header {
+        width: 1385px;
+        height: 96px;
+        padding: 40px 0px 0px 55px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 251px;
+
+        img {
+          width: 48px;
+          height: 48px;
+        }
+
+        .ligne {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          opacity: 0.25;
+          align-items: center;
+          width: 473px;
+          height: 1px;
+          margin-left: 64px;
+          mix-blend-mode: normal;
+          background: $white;
+        }
+
+        menu {
+          display: flex;
+          background: rgba(255, 255, 255, 0.04);
+          backdrop-filter: blur(81.5485px);
+          width: 830px;
+          height: 96px;
+          align-items: center;
+          justify-content: space-between;
+
+          ul {
+            width: 542px;
+            height: 19px;
+            display: flex;
+            justify-content: space-between;
+
+            li {
+              list-style: none;
+              font-family: "Barlow", sans-serif;
+              font-weight: 400;
+              height: 19px;
+              font-size: 16px;
+              line-height: 19.2px;
+              letter-spacing: 2.7px;
+
+              :hover {
+                text-decoration: underline;
+                text-underline-offset: 35px;
+                text-decoration-thickness: 3px;
+              }
+
+              a {
+                color: $white;
+                text-decoration: none;
+
+                span {
+                  font-weight: 700;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
